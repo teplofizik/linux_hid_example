@@ -47,7 +47,7 @@ int main(void)
 		{
 			uint8_t buf[4];
 			
-			if(device.ReadReport(4, buf, sizeof(4)))
+			if(device.ReadReport(4, buf, sizeof(buf)))
 			{
 				printf("Readed: 0x%02x 0x%02x 0x%02x 0x%02x\n", buf[0], buf[1], buf[2], buf[3]);
 			}
